@@ -60,23 +60,30 @@ input{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 5%;
 }
 
 .todo-card {
-    height: 30%;
-    width: 20%;
-    box-shadow: 2px 2px 2px 2px gray;
+    height: 25%;
+    width: 17%;
+    box-shadow: 5px 5px 5px 5px gray;
     margin-left: 60px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
     flex-wrap: wrap;
     font-weight: bold;
-    background-color: #008CBA;
+    /* background-color: blue; */
     font-size: 30px;
     border-radius: 10px;
 }
-
+.add-new-list{
+    justify-content: center;
+    align-items: center;
+    height: 28%;
+    width: 19%;
+    padding: 0;
+}
 
 .tasks-container {
     height: 100%;

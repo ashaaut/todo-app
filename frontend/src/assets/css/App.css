@@ -1,6 +1,9 @@
 
 body{
   margin:0;
+  font-family: Sans-Serif;
+  color: #2B2D2F;
+  /* color: #a9a9a9; */
 }
 .App {
   height: 100vh;
