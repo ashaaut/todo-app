@@ -11,12 +11,12 @@ router.post("/",(req,res)=>{
     const {title}=req.body;
     const todoLists=data["todoLists"]
     const id=data["lastTodoListId"]+1
-    todoLists.push({title,id,lastTaskId:0})
+    todoLists.push({title,id})
 
     const updatedData = {...data,todoLists,lastTodoListId:id}
     fs.writeFile(filePath,JSON.stringify(updatedData,null,3),(err)=>{
         if (err) throw err;
-        res.send({added:{title,id,lastTaskId:0}});
+        res.send({added:{title,id}});
     })
 })
 

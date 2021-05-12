@@ -1,21 +1,23 @@
 import "./../assets/css/App.css";
-import Todo from "./todo.jsx";
 import { Switch, Route } from "react-router-dom";
-import Login from "./login";
-import Register from "./register";
-import TodoListContainer from './todoListContainer'
+
+import TodoListContainer from "./todoListContainer";
+import TaskContainer from "./taskContainer";
 function App() {
   return (
     <div className="App">
-      {/* <Switch>
-        <Route path="/" component={Login} exact />
-        <Route path="/todo" component={Todo} />
-        <Route path="/register" component={Register} />
+      <div className="app-title">Todo Application</div>
+      <div className="todo-list-conatiner">
+        
+      <Switch>
+        <Route path="/" component={TodoListContainer} exact />
+        <Route path="/:id" component={TaskContainer} />
+      
         <Route component={Error} />
-      </Switch> */}
-      <TodoListContainer/>
+      </Switch>
+      </div>
     </div>
-  );
+  );//switch uchal purn ani todo app la replace kr
 }
 
 export default App;
